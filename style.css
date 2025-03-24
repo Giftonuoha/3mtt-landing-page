@@ -10,7 +10,7 @@ body {
 }
 
 .hero-section {
-    background: url(bg3.jpeg) center/cover no-repeat, rgb(39, 35, 35);
+    background: url(bg.jpeg) center/cover no-repeat, rgb(39, 35, 35);
     color: #6B8E23;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@ body {
 }
 
 .hero-section .head {
-    color: #FFFFFF;
+    color: #6B8E23;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 25px;
