@@ -35,7 +35,7 @@ body {
 }
 
 .hero-section .desc p {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: #f7a307;
     background-color: #00000093;
@@ -127,7 +127,7 @@ body {
     }
 
     .hero-section .head {
-        position: absolute;
+        /* position: absolute; */
         top: 10px;
         left: 20px;
         text-align: left;
@@ -135,8 +135,21 @@ body {
         color: #5e8b03;
     }
 
+    .features .feature h3 {
+        font-size: 0.9rem;
+    }
+
+    .features .feature p {
+        font-size: 0.8rem;
+    }
+
     .foot .contact {
         flex-direction: column;
         gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    .foot h1 {
+        font-size: 1rem;
     }
 }
