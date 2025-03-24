@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-section {
+    background: url(bg3.jpeg) center/cover no-repeat, rgb(39, 35, 35);
+    color: #6B8E23;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 65vh;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.hero-section .head {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.hero-section .desc {
+    width: 54%;
+    margin: 15px 0;
+}
+
+.hero-section .desc p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f7a307;
+    background-color: #00000093;
+    padding: 4px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.btn button {
+    background-color: #6B8E23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 25px;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    margin: 15px;
+}
+
+.features .feature {
+    padding: 20px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.features .feature img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.features .feature h3 {
+    color: #6B8E23;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.foot {
+    background-color: #00000093;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    color: #f7a307;
+}
+
+.foot .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #FFF;
+    margin-bottom: 6px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section .desc p,
+    .hero-section .head {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .hero-section .head {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        text-align: left;
+        margin-bottom: 25px;
+        color: #5e8b03;
+    }
+
+    .foot .contact {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
